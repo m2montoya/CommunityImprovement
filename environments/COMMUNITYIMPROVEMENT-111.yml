@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "111"
+mappingDefinitions:
+  SRC:
+    database: COMMDEV_DB
+    schema: CITYVIEW_SCHEMA
+name: COMMUNITYIMPROVEMENT
+type: Environment
