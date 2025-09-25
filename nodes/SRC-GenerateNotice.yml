@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 39ad60e6-e9a4-424e-a7dd-d8fa862eca1b
+name: GenerateNotice
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3dd1fafe-cd3d-4e58-accb-1ef89be5ff96
+          stepCounter: 39ad60e6-e9a4-424e-a7dd-d8fa862eca1b
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: NoticeDateComplete
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 274074aa-a16f-4209-8f92-159d77609fb3
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a758d9fb-d62f-44d5-9a22-dc45f5b7d2e5
+          stepCounter: 39ad60e6-e9a4-424e-a7dd-d8fa862eca1b
+        config: {}
+        dataType: VARCHAR(55)
+        description: ""
+        name: ReferenceNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb067439-6c70-4430-981f-199f399e9a79
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3dfe6664-0309-413e-aeeb-227360ef7234
+          stepCounter: 39ad60e6-e9a4-424e-a7dd-d8fa862eca1b
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: Activity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8967121-a051-4959-8dd5-20b2b7a56dc0
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          GNActivities: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: GNActivities
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'GNActivities') }} "GNActivities"
+            WHERE "GNActivities"."Activity" = 'RH02' OR "GNActivities"."Activity" = 'CE01'
+        name: GenerateNotice
+        noLinkRefs: []
+  name: GenerateNotice
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

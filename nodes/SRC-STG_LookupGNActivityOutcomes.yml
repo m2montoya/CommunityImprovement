@@ -1,0 +1,68 @@
+fileVersion: 1
+id: ffb19039-1b99-4700-8e81-8084b41411e6
+name: STG_LookupGNActivityOutcomes
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4df8d92-ddc9-4aaf-b653-1951c6c168f6
+          stepCounter: ffb19039-1b99-4700-8e81-8084b41411e6
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: Desc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 12fc22a3-6e56-4e9b-86ac-cb053db05172
+                stepCounter: 371be459-a8f1-4885-bb01-71a60d73212f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cd7962e-3f53-457e-835c-5c2440cac90c
+          stepCounter: ffb19039-1b99-4700-8e81-8084b41411e6
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: Code
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c3d10cb-b45e-4dd9-926e-a67e58a8af84
+                stepCounter: 371be459-a8f1-4885-bb01-71a60d73212f
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          LookupGNActivityOutcomes: 371be459-a8f1-4885-bb01-71a60d73212f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LookupGNActivityOutcomes
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LookupGNActivityOutcomes') }} "LookupGNActivityOutcomes"
+        name: STG_LookupGNActivityOutcomes
+        noLinkRefs: []
+  name: STG_LookupGNActivityOutcomes
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

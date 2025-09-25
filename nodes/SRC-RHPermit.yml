@@ -1,0 +1,187 @@
+fileVersion: 1
+id: c3abb6ba-8806-427d-abcd-5dd78de05722
+name: RHPermit
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc0ca563-459e-42a3-912f-58d7509d3a90
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: TypeUnit
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fedae2cc-df5f-4df5-95c6-68c234725d39
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: Classification
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd0239f0-c2a5-4723-8fcc-567057ec4ac8
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: RecordID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2300cf21-7e68-4d1c-ba30-b47fea7435c3
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: NUMBER(5,0)
+        defaultValue: ""
+        description: ""
+        name: TotalUnitsInBuilding
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ea795ed-80d1-45e2-9c59-f80324cf09f2
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: GNCommonID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f13c23a8-e87a-4996-82ae-922f12eab442
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: LegacyID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6aca907f-6da1-45d8-9a7f-193761cf6065
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(53)
+        defaultValue: ""
+        description: ""
+        name: GNLocationID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6ecc0bd-f777-4bf5-a00e-5a6c629cc90e
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: Country
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f15ba972-fb9f-4b49-9145-7ac7e942331b
+          stepCounter: c3abb6ba-8806-427d-abcd-5dd78de05722
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: PermitNumber
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: RHPermit
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
