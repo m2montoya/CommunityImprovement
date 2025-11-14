@@ -1,0 +1,180 @@
+fileVersion: 1
+id: fb579798-27ff-4a18-9f77-4463ed1f1559
+name: STG_CECase
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66d77d1b-c4b5-490b-9095-63557532e727
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: Status
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42155128-bf9d-480e-8c18-8515c1436169
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c59a962-4031-49de-bdcc-035f8d522803
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: CaseNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b7bf133-c76a-4c0e-a248-8d73b3c3d105
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 666075ee-65d9-43ce-a34c-cf10ec8a4649
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: EnteredBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d750b95e-ee9a-407e-bda0-73a40b15d98d
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed4dd258-cade-43ab-ae52-44db97294593
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: Origin
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f45053b7-a64c-4af5-992d-d9bda26c6242
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 248b2694-d3f9-4f2b-97cc-eab110fd2d48
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: Priority
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64f8d573-6d17-491a-ad4a-b68367a0c307
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 088ab0e0-30b2-4b88-8835-80b14ad71eab
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: Valuation
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c42f0e5f-6e33-4929-9d41-083d716f88a3
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3112e6a1-3084-46a9-acdd-4a113c81f84a
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: ActualCost
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d61ade3-50ab-4dc4-a344-d61a49b9f56f
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcf5d3e6-7ab7-4c54-b9b7-9451006f768c
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DateAllViolationsCorrected
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2c4eb62-4799-4bb1-a020-44d036c1ff8e
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ac8f44c-cfef-468d-b2fe-fb5a03a19631
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DateClosed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08fb54f0-e08d-4186-9577-9622a40d3f4d
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22823732-a397-4811-aa9b-e7157b362f6b
+          stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+        config: {}
+        dataType: NUMBER(10,0)
+        description: ""
+        name: GNCommonID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7241b19-4f7a-463b-94e5-ed3c0fe44d1a
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CECase: b0cf5713-b437-417d-a6a4-8db40de47666
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: CECase
+        join:
+          joinCondition: FROM {{ ref('SRC', 'CECase') }} "CECase"
+        name: STG_CECase
+        noLinkRefs: []
+  name: STG_CECase
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

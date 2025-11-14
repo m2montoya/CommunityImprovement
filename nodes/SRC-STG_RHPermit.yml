@@ -70,9 +70,7 @@ operation:
           - locationName: SRC
             nodeName: RHPermit
         join:
-          joinCondition: |-
-            FROM {{ ref('SRC', 'RHPermit') }} "RHPermit"
-              WHERE "RHPermit"."Classification" = '0003'
+          joinCondition: FROM {{ ref('SRC', 'RHPermit') }} "RHPermit"
         name: STG_RHPermit
         noLinkRefs: []
   name: STG_RHPermit

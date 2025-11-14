@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "46"
-includeSelector: "+{ location: SRC name: V_KPI_Data_Product }"
+includeSelector: "+{ location: SRC name: V_GNActivities_RHPermit}"
 name: CommunityImprovement_Data _Product_Job
 type: Job
