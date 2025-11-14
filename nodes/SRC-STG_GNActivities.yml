@@ -1,0 +1,306 @@
+fileVersion: 1
+id: a7aca176-96be-47b9-b2f7-40feb150bde5
+name: STG_GNActivities
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24e995b6-e25a-48be-93d2-913e46406e78
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: NUMBER(10,0)
+        description: ""
+        name: RecordID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee57b7ae-e9d0-452c-8019-0209aa44ae72
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2966be46-6cc3-4e7c-9b6d-b14224d3a0bb
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: dateRequired
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f2c909d4-5403-4065-8382-f3305144d6e6
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63717d5b-c205-4978-81ee-591b9cd3c407
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: dateComplete
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 274074aa-a16f-4209-8f92-159d77609fb3
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9804bf24-723a-4396-b431-fea6a48181e3
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: AssignedTo
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7b47bfe-7b89-4b94-8305-98d20b1c73e2
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01b937e6-c748-465f-a410-5ce78e67ca2b
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: Activity
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8967121-a051-4959-8dd5-20b2b7a56dc0
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8303cad-8282-49a2-a7ac-28c6a709261b
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: Outcome
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d323c1d6-b33f-4b59-8aa9-602c9a2f41b0
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5bb5da0-2a14-4d7a-a15c-4c6fd163d905
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: NoticeDateRH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44c64778-8d45-45a9-ab80-f06893844c13
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c495800b-a658-4631-955b-37a8c98c0d97
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: NoticeDateCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3dc80b2-7262-47de-bb08-65fb0168acb1
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13a68c15-3cf8-4c62-bd68-051d427065cb
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: dateEntered
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e0164ab-3c49-41ed-ba22-ebe897b2a8aa
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8bcc64ff-774c-4f3f-b9a9-f5b4d7525c83
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: EnteredBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71e8d0b9-20ec-41ab-8581-19bf0477ebfe
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8c6b2fd-4243-4d75-8e4c-79481c1ac657
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: HoursSpent
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b7e782e-0b1f-4467-ac48-1de8dcaa7bdc
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 232df9ab-16a1-484d-aa7f-cad57bfe15a2
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: NUMBER(10,0)
+        description: ""
+        name: RHPermitID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6267b7c-2d70-4b32-bb21-db3dd539347d
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b15f3f9-da3c-4d04-9187-62ab390d4fe2
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(55)
+        description: ""
+        name: ReferenceNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb067439-6c70-4430-981f-199f399e9a79
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73bf1f76-c0dd-4cce-bb55-29489827fff9
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: LocationDesc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0185020d-8f08-44b0-abf9-e4f1fdbf9913
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c813b865-3d99-4ea0-a36e-507c0745007f
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: SystemType
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5dea2662-8353-49f2-b130-11ec21eb5b38
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c8cb5f4-0b31-4618-a0c4-75f2178a4568
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: Comments
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 332c3b5d-274e-4ed3-af3b-31fce5c30ea9
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3268d8d4-a199-4d05-b05b-73611f1550c6
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: CompletedBy
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8815236-d9a5-4604-a74d-f7ef04cdb3de
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 440ffd91-8c09-4cb2-8bf0-7ff377d9d06c
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(53)
+        description: ""
+        name: GNLocationID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 899fed09-a3d0-499e-b585-893b0f011ea4
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3df447a5-e7d1-4d4a-969c-db33d651a526
+          stepCounter: a7aca176-96be-47b9-b2f7-40feb150bde5
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CommentsHistory
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1f731bb-bd9b-47f0-8354-231753846caa
+                stepCounter: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          GNActivities: 7e20dbd9-bc94-44fa-84be-b3ccbeac389e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: GNActivities
+        join:
+          joinCondition: FROM {{ ref('SRC', 'GNActivities') }} "GNActivities"
+        name: STG_GNActivities
+        noLinkRefs: []
+  name: STG_GNActivities
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
