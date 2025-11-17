@@ -342,7 +342,7 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('SRC', 'STG_GNActivities') }} "STG_GNActivities"
-            INNER JOIN {{ ref('SRC', 'STG_RHPermit') }} "STG_RHPermit"
+            LEFT JOIN {{ ref('SRC', 'STG_RHPermit') }} "STG_RHPermit"
             ON "STG_GNActivities"."ReferenceNumber" = "STG_RHPermit"."PermitNumber"
         name: V_GNActivities_RHPermit
         noLinkRefs: []

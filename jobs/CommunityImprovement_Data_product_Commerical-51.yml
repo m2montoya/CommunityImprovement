@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "51"
+includeSelector: "+{ location: SRC name: V_GNCommon_LinkGNLocation_CECase }"
+name: CommunityImprovement_Data_product_Commerical
+type: Job

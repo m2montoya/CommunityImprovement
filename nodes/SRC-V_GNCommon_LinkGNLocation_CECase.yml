@@ -1,0 +1,180 @@
+fileVersion: 1
+id: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+name: V_GNCommon_LinkGNLocation_CECase
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 709c8b69-ded3-41b2-b0e0-e32a1f1587c5
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: VARCHAR(350)
+        description: ""
+        name: Location
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9151ab5c-7e18-4acd-b561-dc67efcadc4f
+                stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 253ad158-6d42-4b83-a075-8ef5252e2ede
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: LocType
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a984671-fb14-404a-9617-1ec4db4e2111
+                stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 419988cb-ee62-446e-adc0-80646fe45043
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: NUMBER(10,0)
+        description: ""
+        name: RecordID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0aa74ac5-7349-48d9-b216-d358e4cbb775
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aef2ec6b-8d7c-4221-a17b-4c4497f6e6bb
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DateEntered
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 436e3e45-c40a-4afa-a408-63b7004d0a63
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd638693-d7c4-4894-8d1b-fb9672fd0db0
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: Inspector
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40be8fb2-a098-450a-9b44-7b45d7434e3c
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92378ef2-166a-40cd-a9a4-4a8f6479520b
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: VARCHAR(4)
+        description: ""
+        name: Status
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42155128-bf9d-480e-8c18-8515c1436169
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c18f029-eed5-4e03-a66b-8e0b6b203a96
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: CaseNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b7bf133-c76a-4c0e-a248-8d73b3c3d105
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bf8341e-db29-478a-9f51-fe6312ef723f
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: DateClosed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 08fb54f0-e08d-4186-9577-9622a40d3f4d
+                stepCounter: b0cf5713-b437-417d-a6a4-8db40de47666
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 709f561e-1c87-4579-a26a-ef9861422f87
+          stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Response Time
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: DATEDIFF('DAY', "CECase"."DateEntered", "CECase"."DateClosed")
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CECase: b0cf5713-b437-417d-a6a4-8db40de47666
+          GNCommon: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+          LinkGNLocation: 7fb278da-7720-430b-a88e-912cc00194a5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: CECase
+          - locationName: SRC
+            nodeName: GNCommon
+          - locationName: SRC
+            nodeName: LinkGNLocation
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'GNCommon') }} "GNCommon"
+            INNER JOIN {{ ref('SRC', 'LinkGNLocation') }} "LinkGNLocation"
+            ON "GNCommon"."RecordID" = "LinkGNLocation"."GNCommonID"
+            INNER JOIN {{ ref('SRC', 'CECase') }} "CECase"
+            ON "GNCommon"."RecordID" = "CECase"."GNCommonID"
+        name: V_GNCommon_LinkGNLocation_CECase
+        noLinkRefs: []
+  name: V_GNCommon_LinkGNLocation_CECase
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

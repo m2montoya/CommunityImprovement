@@ -1,0 +1,187 @@
+fileVersion: 1
+id: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+name: GNCommon
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baa7bd8e-80f2-4ebb-aefa-d4695c5e93b2
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: CV_INSERT_IDENTITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22e6876c-4478-4209-8b20-3130933ea709
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: GNMasterProjectID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9097bb8-0a92-4221-9305-606deb250eb2
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: RecordID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ce13225-cb9a-4d3e-a0ac-5ecd49ef5921
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: BINARY(8388608)
+        defaultValue: ""
+        description: ""
+        name: _TimeStamp
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ff8ab5d-d43c-4cfa-8e53-37780ed271e6
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: EnteredBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b863bfb4-b6f3-4ae6-9dae-c0b47ae2fc63
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: DateEntered
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17d13f6a-d5a2-4f70-b476-613e213400c7
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        name: Comments
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92969ec2-79d3-4f0c-80b4-29b66e194867
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: PrimaryUsePreBuilt
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f36ac8d-1f82-4334-b37b-77bffd89485a
+          stepCounter: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: LegacyID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: GNCommon
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

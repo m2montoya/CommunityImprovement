@@ -1,0 +1,415 @@
+fileVersion: 1
+id: 7fb278da-7720-430b-a88e-912cc00194a5
+name: LinkGNLocation
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ff59e7d-c11f-4fe5-a8b8-185caa4382a5
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: CV_INSERT_IDENTITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0c0d2ea-24af-4442-bc51-dcba71c4a543
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: RecordID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d243c756-7228-47b6-9f2b-53e2fb8bc4d8
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: GNCommonID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e405dfc4-2764-4f1e-a118-b2d35a4014df
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BINARY(8388608)
+        defaultValue: ""
+        description: ""
+        name: _TimeStamp
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: def3d303-01d5-409f-a8db-bb03e9429e84
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: ""
+        description: ""
+        name: EnteredBy
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2220c94-a116-4dd0-ba17-a59db1e7c1da
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: DateEntered
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75e8b62f-6e0e-4ecb-80e5-15d29105feaf
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(53)
+        defaultValue: ""
+        description: ""
+        name: GNLocationID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9151ab5c-7e18-4acd-b561-dc67efcadc4f
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(350)
+        defaultValue: ""
+        description: ""
+        name: Location
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a984671-fb14-404a-9617-1ec4db4e2111
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: LocType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e096879a-70ba-4d6a-98f3-e9b0f1cabc95
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: flagProcessed
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93682bca-2416-4d04-b4af-f7bcf5319404
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(200)
+        defaultValue: ""
+        description: ""
+        name: LegacyID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1969e886-a196-44d7-81f7-4c386d181374
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: flagPrimaryLocation
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1749695-9ff0-43c8-8e70-13598332dfa3
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: flagDisplay
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 379f13d1-feec-472a-94d0-126c46994be5
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: CVDateLastModified
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14752c34-4c3d-49c5-9893-c0d015282099
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: Status
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d1d90bd-8f0c-4e80-84c1-219fb38c5ae1
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: FlagNoPlotFees
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c1c7fd4-4d05-40ed-9331-21a3113be215
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: FlagPreNeed
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d67e1b9-a7a4-4b6c-87b4-128317af1111
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: CPPlotType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f896d801-8ac6-4240-bd4e-e39ce559a3b4
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: FlagCPProcessed
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 827c45c2-d66a-4fb7-99a8-d78b8dbb1efe
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        name: CPStatus
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b21e94f9-6b2f-4420-b56d-5286f66d4e5f
+          stepCounter: 7fb278da-7720-430b-a88e-912cc00194a5
+        config: {}
+        dataType: VARCHAR(100)
+        defaultValue: ""
+        description: ""
+        name: UtilityLocationID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: LinkGNLocation
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
