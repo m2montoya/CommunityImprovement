@@ -4,6 +4,8 @@ name: V_GNActivities_CECase
 operation:
   config:
     insertStrategy: UNION
+    postSQL: ""
+    preSQL: ""
     selectDistinct: false
   database: ""
   deployEnabled: true
@@ -433,7 +435,45 @@ operation:
           STG_CECase: fb579798-27ff-4a18-9f77-4463ed1f1559
           STG_GNActivities: a7aca176-96be-47b9-b2f7-40feb150bde5
         customSQL:
-          customSQL: ""
+          customSQL: |-
+            {{ stage('Override Create SQL', deploy_phase_override="create") }}
+            	CREATE OR REPLACE VIEW {{ ref('SRC', 'V_GNActivities_CECase')}} AS (
+            		SELECT 
+             "RecordID" AS "RecordID",
+             "dateRequired" AS "dateRequired",
+             "dateComplete" AS "dateComplete",
+             "AssignedTo" AS "AssignedTo",
+             "Activity" AS "Activity",
+             "Outcome" AS "Outcome",
+             "NoticeDateRH" AS "NoticeDateRH",
+             "NoticeDateCE" AS "NoticeDateCE",
+             "dateEntered" AS "dateEntered",
+             "EnteredBy" AS "EnteredBy",
+             "HoursSpent" AS "HoursSpent",
+             "RHPermitID" AS "RHPermitID",
+             "ReferenceNumber" AS "ReferenceNumber",
+             "LocationDesc" AS "LocationDesc",
+             "SystemType" AS "SystemType",
+             "Comments" AS "Comments",
+             "CompletedBy" AS "CompletedBy",
+             "GNLocationID" AS "GNLocationID",
+             "CommentsHistory" AS "CommentsHistory",
+             "Status" AS "Status",
+             "CaseNumber" AS "CaseNumber",
+             "EnteredBy" AS "EnteredBy",
+             "Origin" AS "Origin",
+             "Priority" AS "Priority",
+             "Valuation" AS "Valuation",
+             "ActualCost" AS "ActualCost",
+             "DateAllViolationsCorrected" AS "DateAllViolationsCorrected",
+             "DateClosed" AS "DateClosed",
+             "GNCommonID" AS "GNCommonID"
+             FROM {{ ref('SRC', 'STG_GNActivities') }}
+            INNER JOIN {{ ref('SRC', 'STG_CECase') }} "STG_CECase"
+            ON {{ ref('SRC', 'STG_GNActivities') }}."ReferenceNumber" = "STG_CECase"."CaseNumber"
+
+
+            	)
         dependencies:
           - locationName: SRC
             nodeName: STG_CECase
@@ -449,7 +489,7 @@ operation:
   name: V_GNActivities_CECase
   overrideSQL: false
   schema: ""
-  sqlType: View
+  sqlType: Stage
   type: sql
   version: 1
 type: Node

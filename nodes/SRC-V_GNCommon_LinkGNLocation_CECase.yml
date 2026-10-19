@@ -4,6 +4,8 @@ name: V_GNCommon_LinkGNLocation_CECase
 operation:
   config:
     insertStrategy: UNION
+    postSQL: ""
+    preSQL: ""
     selectDistinct: false
   database: ""
   deployEnabled: true
@@ -134,7 +136,7 @@ operation:
           columnCounter: 709f561e-1c87-4579-a26a-ef9861422f87
           stepCounter: 075d5319-5982-48c5-b0a0-e83c0a2c236e
         config: {}
-        dataType: ""
+        dataType: TIMESTAMP_NTZ(9)
         defaultValue: ""
         description: ""
         keyColumnType: None
@@ -154,7 +156,99 @@ operation:
           GNCommon: ece08ff2-a3ac-4c58-ab9c-7078b413fd84
           LinkGNLocation: 7fb278da-7720-430b-a88e-912cc00194a5
         customSQL:
-          customSQL: ""
+          customSQL: |-
+            {{ stage('Override Create SQL', deploy_phase_override="create") }}
+            	CREATE OR REPLACE VIEW {{ ref('SRC', 'V_GNCommon_LinkGNLocation_CECase')}} AS (
+            		SELECT 
+             "CV_INSERT_IDENTITY" AS "CV_INSERT_IDENTITY",
+             "RecordID" AS "RecordID",
+             "GNCommonID" AS "GNCommonID",
+             "_TimeStamp" AS "_TimeStamp",
+             "EnteredBy" AS "EnteredBy",
+             "DateEntered" AS "DateEntered",
+             "GNLocationID" AS "GNLocationID",
+             "Location" AS "Location",
+             "LocType" AS "LocType",
+             "flagProcessed" AS "flagProcessed",
+             "LegacyID" AS "LegacyID",
+             "flagPrimaryLocation" AS "flagPrimaryLocation",
+             "flagDisplay" AS "flagDisplay",
+             "CVDateLastModified" AS "CVDateLastModified",
+             "Status" AS "Status",
+             "FlagNoPlotFees" AS "FlagNoPlotFees",
+             "FlagPreNeed" AS "FlagPreNeed",
+             "CPPlotType" AS "CPPlotType",
+             "FlagCPProcessed" AS "FlagCPProcessed",
+             "CPStatus" AS "CPStatus",
+             "UtilityLocationID" AS "UtilityLocationID",
+             "CV_INSERT_IDENTITY" AS "CV_INSERT_IDENTITY",
+             "RecordID" AS "RecordID",
+             "_TimeStamp" AS "_TimeStamp",
+             "DateEntered" AS "DateEntered",
+             "Type" AS "Type",
+             "LocationComment" AS "LocationComment",
+             "Inspector" AS "Inspector",
+             "Status" AS "Status",
+             "CaseNumber" AS "CaseNumber",
+             "EnteredBy" AS "EnteredBy",
+             "Origin" AS "Origin",
+             "Priority" AS "Priority",
+             "Valuation" AS "Valuation",
+             "ActualCost" AS "ActualCost",
+             "DateAllViolationsCorrected" AS "DateAllViolationsCorrected",
+             "DateClosed" AS "DateClosed",
+             "GNCommonID" AS "GNCommonID",
+             "LegacyID" AS "LegacyID",
+             "Jurisdiction" AS "Jurisdiction",
+             "DetailedDescription" AS "DetailedDescription",
+             "WebViewCode" AS "WebViewCode",
+             "attTemporaryParcelNumber" AS "attTemporaryParcelNumber",
+             "attTemporaryAddress" AS "attTemporaryAddress",
+             "Department" AS "Department",
+             "attProcess" AS "attProcess",
+             "attAbatementDate" AS "attAbatementDate",
+             "attCaseCitationType" AS "attCaseCitationType",
+             "attCaseDescription" AS "attCaseDescription",
+             "attLastNoticeOfViolationDate" AS "attLastNoticeOfViolationDate",
+             "attLastNoticeDate" AS "attLastNoticeDate",
+             "attLastInspectionDate" AS "attLastInspectionDate",
+             "attNumberUnitsInspected" AS "attNumberUnitsInspected",
+             "attAdditionalCaseType1" AS "attAdditionalCaseType1",
+             "attAdditionalCaseType5" AS "attAdditionalCaseType5",
+             "attAdditionalCaseType4" AS "attAdditionalCaseType4",
+             "attAdditionalCaseType3" AS "attAdditionalCaseType3",
+             "attAdditionalCaseType2" AS "attAdditionalCaseType2",
+             "attLastDocumentNumber" AS "attLastDocumentNumber",
+             "attLastRecordingDate" AS "attLastRecordingDate",
+             "attLastCivilPenaltiesDate" AS "attLastCivilPenaltiesDate",
+             "attLastNoticeAndOrderDate" AS "attLastNoticeAndOrderDate",
+             "attLastNoticeandOrderName" AS "attLastNoticeandOrderName",
+             "attLastInvoiceDate" AS "attLastInvoiceDate",
+             "attNextFiscalYear" AS "attNextFiscalYear",
+             "attSwitchProcess" AS "attSwitchProcess",
+             "attDateAssigned" AS "attDateAssigned",
+             "attDaysOpen" AS "attDaysOpen",
+             "attLastActivityDate" AS "attLastActivityDate",
+             "attResult" AS "attResult",
+             "attZone" AS "attZone",
+             "attLastHearingDate" AS "attLastHearingDate",
+             "CVDateLastModified" AS "CVDateLastModified",
+             "InternalNotes" AS "InternalNotes",
+             "ExternalID" AS "ExternalID",
+             "InspectionAverageScore" AS "InspectionAverageScore",
+             "InspectionAverageCorrectedScore" AS "InspectionAverageCorrectedScore",
+             "attFlagLIMS" AS "attFlagLIMS",
+             "attPort" AS "attPort",
+             "attIndustryPortCode" AS "attIndustryPortCode",
+             "attIndustry" AS "attIndustry",
+             "flagPublicAPI" AS "flagPublicAPI",
+             "SubType" AS "SubType",
+             "BuildingType" AS "BuildingType",
+             "attVehicleType" AS "attVehicleType"
+             FROM {{ ref('SRC', 'LinkGNLocation') }}
+            INNER JOIN {{ ref('SRC', 'CECase') }} "CECase"
+            ON {{ ref('SRC', 'LinkGNLocation') }}./*COLUMN*/ = "CECase"./*COLUMN*/
+            	)
         dependencies:
           - locationName: SRC
             nodeName: CECase
@@ -174,7 +268,7 @@ operation:
   name: V_GNCommon_LinkGNLocation_CECase
   overrideSQL: false
   schema: ""
-  sqlType: View
+  sqlType: Stage
   type: sql
   version: 1
 type: Node

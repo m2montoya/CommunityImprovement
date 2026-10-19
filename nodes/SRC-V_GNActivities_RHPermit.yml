@@ -4,6 +4,8 @@ name: V_GNActivities_RHPermit
 operation:
   config:
     insertStrategy: UNION
+    postSQL: ""
+    preSQL: ""
     selectDistinct: false
   database: ""
   deployEnabled: true
@@ -349,7 +351,7 @@ operation:
   name: V_GNActivities_RHPermit
   overrideSQL: false
   schema: ""
-  sqlType: View
+  sqlType: Stage
   type: sql
   version: 1
 type: Node
