@@ -429,6 +429,26 @@ operation:
                 stepCounter: "0"
             transform: DATEDIFF('DAY', "STG_GNActivities"."dateEntered", "STG_GNActivities"."dateComplete")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9e338d6-b701-4881-90be-baa4c13070df
+          stepCounter: 0be05f1c-f4cf-4c3f-80d5-12a21c769b58
+        config: {}
+        dataType: VARCHAR(4)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Type
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fe192fd6-3dc2-44df-8665-4fde52dcfbff
+                stepCounter: fb579798-27ff-4a18-9f77-4463ed1f1559
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
